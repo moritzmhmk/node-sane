@@ -11,11 +11,11 @@
       ],
       "include_dirs": [
         "<!(node -e \"require('nan')\")",
-        "/usr/include/sane"
+        "/usr/local/include"
       ],
       "link_settings": {
         "libraries": [
-          "-lsane"
+          "-lsane", "-L/usr/local/lib"
         ]
       }
     },
